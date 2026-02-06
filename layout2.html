@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,intial scale=1.0" />
+<title>layout 2</title>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 3px solid orangered;
+    background-color: white; */
+  }
+  body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    padding: 16px;
+
+  } 
+  p{
+    color: darkorange;
+    margin-bottom: 5px;
+  }
+  .container0{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  h1{
+    color: white;
+    font-size: 50px;
+    font-family:'Geist Sans', sans-serif ;
+  }
+  hr{
+    background-color: darkorange;
+    height:5px;
+    margin-bottom: 50px;
+  }
+  .container1{
+    background-color: black;
+    width: 90%;
+    max-width: 400px;
+    border:5px solid darkorange;
+    padding: 30px;
+    height:430px;
+margin-right: 30px;
+margin-bottom: 20px;
+  }
+  h2{
+    color: white;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  .container2{
+    background-color: lightslategray;
+    width: 268px;
+    border: 1px solid lightslategray;
+    height: 192px;
+    margin-bottom:15px ;
+  }
+  .v-line{
+    background-color: darkorange;
+    height: 650px;
+    width: 10px;
+    
+  }
+  .container3{
+    background-color: black;
+    border: 1px solid lightslategray;
+    width: 162px;
+    height: 96px;
+    padding: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container3:hover{
+border-color: darkorange;
+  }
+  .container4{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  h3{
+    color: white;
+    margin-bottom: 10px;
+  }
+  .x-line{
+    background-color: darkorange;
+    width: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .container5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  .container6{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+ 
+  /* ipad mini */
+  @media (min-width:768px) and (max-width:1024px){ 
+.container3{
+    width: 168.4px;
+}
+.container1{
+    width: 350px;
+    margin-right: 30px;
+}
+body{
+    padding: 32px;
+}
+.container4{
+    width: 380px;
+}
+.container6{
+    width: 280px;
+}
+.v-line{
+  margin-right: 30px;
+}
+
+  }
+  /* apple/desktop */
+  @media (min-width: 1280px) and (max-width: 1728px) {
+body{
+    padding: 32px;
+}
+.container1{
+   max-width: 750px;
+   height: 380px;
+   width: 100%;
+ 
+}
+.container3{
+    width: 180px;
+  
+}
+.container4{
+    width: 800px;
+    
+}
+.container2{
+    width: 680px;
+}
+.v-line{
+    height: 500px;
+    margin-right: 30px;
+    /* pull towards left */
+    margin-left: -20px;
+}
+
+} 
+</style>
+</head>
+<body>
+<div class="container0">
+<div>
+    <p>02 - VISUAL MAGAZINE</p>
+
+    <h1>Stories in Structure</h1>
+
+    <hr>
+</div>
+<div class="container5">
+  
+<div class="row">
+<div class="column">
+  
+<div class="container1">
+    <h2 style="font-size: 30px; margin-bottom: 15px;">Primary Feature</h2>
+
+    <div class="container2"></div>
+
+    <p style="color:lightslategray ;">Sophisticated editorial design with nested containers demonstrating professional layout techniques. Each section builds on the previous with careful hierarchy and visual balance.</p>
+</div>
+
+<div class="container4">
+    <div class="container3">
+        <h3 style="font-size: 14px;">Sub-Feature 1</h3>
+    
+        <p style="color:lightslategray ; font-size: 12px;">Content snippet describing this feature.</p>
+    </div>
+    
+    <div class="container3">
+        <h3 style="font-size: 14px;">Sub-Feature 2</h3>
+    
+        <p style="color:lightslategray ; font-size: 12px;">Content snippet describing this feature.</p>
+    </div>
+    
+    <div class="container3">
+        <h3 style="font-size: 14px;">Sub-Feature 3</h3>
+    
+        <p style="color:lightslategray ; font-size: 12px;">Content snippet describing this feature.</p>
+    </div>
+    
+    <div class="container3">
+        <h3 style="font-size: 14px;">Sub-Feature 4</h3>
+    
+        <p style="color:lightslategray ; font-size: 12px;">Content snippet describing this feature.</p>
+    </div>
+    </div>
+
+
+  
+</div>
+
+
+<div class="v-line"></div>
+
+</div>
+
+
+
+
+<div class="container6">
+<div class="row">
+<div class="x-line"></div>
+
+<div>
+    <p style="font-size: 12px;margin-bottom: 10px;">SIDEBAR</p>
+
+    <h2 style="font-size: 20px;margin-bottom: 10px;">Expert Column</h2>
+
+    <p style="color: lightslategray;margin-bottom: 30px;">Guest perspective on design methodology and best practices.</p>
+</div>
+</div>
+
+<div class="row">
+    <div class="x-line"></div>
+
+    <div>
+        <h3 style="font-size: 16px;">Feature Card 1</h3>
+
+        <p style="color: lightslategray;margin-bottom: 30px;">Detailed content for sidebar section with insights.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="x-line"></div>
+
+    <div>
+        <h3 style="font-size: 16px;">Feature Card 2</h3>
+
+        <p style="color: lightslategray;margin-bottom: 30px;">Detailed content for sidebar section with insights.</p>
+    </div>
+</div>
+
+<div class="row">
+<div class="x-line"></div>
+
+<div>
+    <h3 style="font-size: 16px;">Feature Card 3</h3>
+
+    <p style="color: lightslategray;margin-bottom: 30px;">Detailed content for sidebar section with insights.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
