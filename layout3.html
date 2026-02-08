@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, intial scale=1.0 " />
+  <title>layout 3</title>
+
+  <style>
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 3px solid orangered;
+    background-color: white; */
+  }
+  body{
+    background-color: black;
+    padding: 16px;
+  }
+
+  p{
+    color: yellow;
+    margin-bottom: 10px;
+    font-family: 'Geist Sans', sans-serif ;
+
+  }
+  h1{
+    color: white;
+    font-family: 'Geist Sans', sans-serif ;
+    margin-bottom: 10px;
+  }
+  hr{
+    background-color: darkorange;
+    height: 5px;
+    margin-bottom: 10px;
+  }
+  .container0{
+    display: flex;
+    flex-direction: column;
+  }
+  .container1{
+background-color: rgb(2, 2, 23);
+width: 377px;
+border: 2px solid darkorange;
+padding: 30px;
+margin-bottom: 100px;
+display: flex;
+flex-direction: column;
+  }
+  .container2{
+    background-color: rgb(73, 41, 3);
+    width: 310px;
+    height: 310px;
+    border: 2px solid darkorange;
+  }
+  .container3{
+    background-color: rgb(2, 2, 23);
+    width: 377px;
+    border: 4px solid lightslategray;
+    padding: 30px;
+    margin-bottom: 25px;
+  }
+  .container3:hover{
+    border-color: darkorange;
+  }
+  h3{
+    color: white;
+    margin-bottom: 20px;
+  }
+  .container4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container5{
+    background-color: black;
+    width: 180px;
+    height: 78px;
+    padding: 16px;
+    border: 1px solid lightslategray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container5:hover{
+    border-color: darkorange;
+  }
+  .container6{
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+  }
+
+  /* ipad mini */
+  @media (min-width:768px) and (max-width:1024px){ 
+    body{
+        padding: 32px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .container1{
+        flex-direction: row;
+        width: 700px;
+    }
+    .container3{
+        width: 340px;
+        height: 257px;
+    }
+    .container6{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container6 div{
+        flex-grow: 4;
+    }
+   .container5{
+    width: 128px;
+    height: 94px;
+   }
+   .container4{
+    gap: 3.5px;
+   }
+   .container4 div{
+    flex-grow: 4;
+   }
+  }
+  /* apple/desktop */
+  @media (min-width: 1280px) and (max-width: 1728px) {
+body{
+    padding: 32px;
+}
+.container1{
+    flex-direction: row;
+    width: 1380px;
+    justify-content: space-between;
+}
+.container6{
+    flex-direction: row;
+    gap: 30px;
+}
+.container3{
+    width: 600px;
+    height: 250px;
+}
+.container5{
+    width: 160px;
+}
+.container4{
+    gap: 2.2px;
+}
+
+  }
+
+  </style>
+ </head> 
+ <body>
+    <div class=" container0">
+        <div>
+<p style="font-size: 14px;">ISSUE 03</p>
+
+<h1 style="font-size: 60px; margin-bottom: 30px;">Modular Design</h1>
+
+<hr style="margin-bottom: 30px;">
+</div>
+
+
+
+
+
+<div class="container1">
+    <div>
+<h1 style="font-size: 36px;margin-bottom: 20px;">Component Strategy</h1>
+
+<p style="color: darkgray;margin-bottom: 20px;">Building reusable modules for complex layouts using flexbox principles.</p>
+
+<p>✓ Responsive Design</p>
+
+<p>✓ Modular Components</p>
+
+<p style="margin-bottom: 40px;">✓ Semantic HTML</p>
+    </div>
+<div>
+<div class="container2"></div>
+</div>
+</div>
+
+
+
+
+<div class="container6">
+<div class="container3">
+    <h1 style="color: darkorange;font-size: 36px;">01</h1>
+
+    <h3 style="font-size: 20px;">Layout Type 1</h3>
+
+    <p style="color: darkgray;margin-bottom: 20px;">Description of this layout approach and its use cases.</p>
+
+    <hr style="height: 0.1px;background-color: lightslategray;opacity: 0.3;margin-bottom: 20px;">
+
+    <p>VIEW EXAMPLE →</p>
+</div>
+<div class="container3">
+    <h1 style="color: darkorange;font-size: 36px;">02</h1>
+
+    <h3 style="font-size: 20px;">Layout Type 2</h3>
+
+    <p style="color: darkgray;margin-bottom: 20px;">Description of this layout approach and its use cases.</p>
+
+    <hr style="height: 0.1px;background-color: lightslategray;opacity: 0.3;margin-bottom: 20px;">
+
+    <p>VIEW EXAMPLE →</p>
+</div>
+<div class="container3" style="margin-bottom: 100px;">
+    <h1 style="color: darkorange;font-size: 36px;">03</h1>
+
+    <h3 style="font-size: 20px;">Layout Type 3</h3>
+
+    <p style="color: darkgray;margin-bottom: 20px;">Description of this layout approach and its use cases.</p>
+
+    <hr style="height: 0.1px;background-color: lightslategray;opacity: 0.3;margin-bottom: 20px;">
+
+    <p>VIEW EXAMPLE →</p>
+</div>
+</div>
+
+
+
+
+<div class="container4">
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 1</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 2</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 3</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 4</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 5</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 6</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 7</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+    <div class="container5">
+        <p style="font-size: 14px; color: beige;">Module 8</p>
+
+        <p style="color: lightslategray;">Grid item content</p>
+    </div>
+</div>
+
+
+
+
+
+</div>
+ </body>  
+</html>
