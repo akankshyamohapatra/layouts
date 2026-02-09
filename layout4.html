@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, intial scale=1.0"/>
+<title>layout 4</title>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 3px solid orangered;
+    background-color: white; */
+  }
+body{
+    background-color: black;
+    padding: 16px;
+}
+p{
+    color: rgb(225, 207, 11);
+    margin-bottom: 19px;
+    font-size: 12px;
+}
+h1{
+    color: white;
+    font-size: 38px;
+    font-family: 'Geist Sans', sans-serif ;
+}
+.container1{
+    background-color: rgb(44, 44, 46);
+    width: 348px;
+    height: 256px;
+    border: 4px solid darkorange ;
+    margin: 20px;
+    margin-left: 0px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.v-line{
+    width: 8px;
+    background-color: darkorange;
+    height: 478px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.container2 div{
+flex-grow: 4;
+}
+.container3{
+    background-color:rgb(44, 44, 46); 
+    width: 105.33px;
+    height: 160px;
+    border: 1px solid lightslategray;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: flex-end;
+}
+.container3:hover{
+    border-color: darkorange;
+}
+.container4{
+    background-color: black;
+    width: 101.33px;
+    height: 25px;
+}
+.container5{
+    background-color:rgb(44, 44, 46); 
+    width: 380px;
+    padding: 32px;
+    border: 4px solid darkorange;
+    height: 340px;
+}
+h2{
+    color: white;
+    font-size: 24px;
+    font-family: 'Geist Sans', sans-serif ;
+    margin-bottom: 30px;
+}
+.v-line1{
+    width: 4px;
+    height: 52px;
+    background-color: darkorange;
+    margin-right: 15px;
+}
+h3{
+    color: white;
+    font-size: 16px;
+    font-family: 'Geist Sans', sans-serif ;
+    margin-bottom: 15px;
+}
+.container6{
+    display: flex;
+    flex-direction: column;
+   
+}
+.v-line2{
+    width: 8px;
+    background-color: darkorange;
+    height: 410px; 
+    margin-right: 25px; 
+}
+.textbox1{
+   background-color: black;
+   width: 348px;
+   height: 80px;
+}
+.textbox2{
+    background-color: black;
+    width: 348px;
+    height: 78px;
+}
+.container7{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ipad mini */
+@media (min-width:768px) and (max-width:1024px){ 
+.container6{
+    flex-direction: row;
+}
+.container1{
+    width: 272px;
+    height: 256px;
+}
+.v-line{
+  margin-left: 20px;  
+  margin-right: 60px;
+}
+.textbox1{
+    width: 272px;
+   height: 80px;
+}
+.textbox2{
+    width: 272px;
+    height: 104px;
+}
+.v-line2{
+    margin-right: 60px;
+    height: 478px;
+}
+.textbox3{
+    width: 272px;
+    height: 104px;  
+    margin-top: 65px; 
+}
+.container5{
+    width: 704px;
+    height: 200px;
+}
+body{
+    padding: 32px;
+}
+.container7{
+    flex-direction: row;
+}
+.v-line1{
+    height: 72px;
+}
+}
+
+ /* apple/desktop */
+ @media (min-width: 1280px) and (max-width: 1728px) {
+body{
+    padding: 32px;
+}
+.container6{
+    flex-direction: row;
+}
+.container1{
+    width: 600px;
+    margin-right: 50px;
+}
+.textbox1{
+    width: 600px;
+    height: 40px;
+}
+.textbox2{
+    width:600px ;
+}
+.v-line{
+    margin-right: 50px;
+    height:410px ;
+}
+.textbox3{
+    width: 272px;
+    height: 104px;  
+    margin-top: 170px; 
+}
+.v-line2{
+    margin-right: 50px;
+}
+.container3{
+    width: 142px;
+}
+.container3{
+    margin-right: 10.5px;
+}
+.container7{
+    flex-direction: row;
+    gap: 200px;
+}
+.container5{
+    width: 1400px;
+    height: 190px;
+}
+ }
+
+</style>
+
+</head>
+<body>
+<div class="container6">
+ <div class="row">
+    <div>
+<p>LEFT SPREAD</p>
+
+<div class="textbox1">
+<h1>Magazine Storytelling</h1>
+</div>
+
+<div class="container1" style="margin-bottom: 20px;"></div>
+
+<div class="textbox2">
+<p style="color: rgb(198, 191, 191); font-size: 16px;margin-bottom: 50px;">Complex narratives require sophisticated layouts that guide the reader through multiple stories and sections with visual hierarchy.</p>
+</div>
+
+    </div>
+    <div>
+        <div class="v-line"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+    <div>
+    <div class="v-line2" ></div>
+    </div>
+
+        <div>
+        <div>
+<p>RIGHT SPREAD</p>
+
+<div class="container2">
+<div class="container3">
+    <div class="container4">
+       
+        <p style="color: white;font-size: 14px;margin-left: 10px;margin-top: 8px;">Item 1</p>
+  
+    </div>
+</div>
+
+
+
+    <div class="container3">
+        <div class="container4">
+
+            <p style="color: white;font-size: 14px;margin-left: 10px;margin-top: 8px;">Item 2</p>
+        </div>
+    </div>
+    
+
+
+        <div class="container3">
+            <div class="container4">
+                <p style="color: white;font-size: 14px;margin-left: 10px;margin-top: 8px;">Item 3</p>
+            </div>
+        </div>
+        
+
+
+            <div class="container3" style="margin-bottom: 28px;">
+                <div class="container4">
+                    <p style="color: white;font-size: 14px;margin-left: 10px;margin-top: 8px;">Item 4</p>
+                </div>
+            </div>
+      </div>
+</div>
+
+<div class="textbox3">
+<p style="color: rgb(198, 191, 191); font-size: 16px;margin-bottom: 50px;">Supporting content and visual elements.</p>
+</div>
+
+           </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container5">
+    <h2>Related Stories</h2>
+
+    <div class="container7">
+    <div class="row">
+        <div class="v-line1"></div>
+
+        <div>
+            <h3>Story 1</h3>
+
+            <p style="color:  rgb(198, 191, 191);font-size: 14px;font-size: 14px;margin-bottom: 30px;">Related article summary and preview.</p>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="v-line1"></div>
+
+        <div>
+            <h3>Story 2</h3>
+
+            <p style="color:  rgb(198, 191, 191);font-size: 14px;font-size: 14px;margin-bottom: 30px;">Related article summary and preview.</p>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="v-line1"></div>
+
+        <div>
+            <h3>Story 3</h3>
+
+            <p style="color:  rgb(198, 191, 191);font-size: 14px;font-size: 14px;">Related article summary and preview.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+
+</html>
